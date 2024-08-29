@@ -1,0 +1,191 @@
+{
+    "intents":[
+        {
+            "tag": "salutations",
+            "patterns": [
+                "bonjour", "salut", "hey", "Hola", "bonsoir", "Hi", "hello"
+            ],
+            "responses": [
+                "Bonjour!", "Salut, comment puis-je vous aider?", "Bonjour, comment puis-je vous aider?", "Comment puis-je vous assister aujourd'hui?"
+            ]
+        },
+        {
+            "tag": "au revoir",
+            "patterns": [
+                "Au revoir", "bye", "a plus tard", "Adieu", "Bye", "a la prochaine", "Bonne journee", "Bisous", "a bientot"
+            ],
+            "responses": [
+                "a bientot.", "Bonne journee.", "Au revoir! Revenez bientot.", "Je serai la si vous avez des questions, n'hesitez pas."
+            ]
+        },
+        {
+            "tag": "nom",
+            "patterns": [
+                "Quel est ton nom?", "As-tu un nom?", "Peux-tu me dire ton nom?", "Ton nom?"
+            ],
+            "responses": [
+                "Je suis ETHER-AI, mon nom est base sur l'entreprise Eco-thermique. Je suis ici pour repondre a vos questions sur Eco-thermique.", "Je suis Ether-AI, un nom inspire du concept d'energie ecologique d'Eco-Thermique. Je suis ici pour repondre a vos questions sur Eco-thermique.", "Mon nom est Ether-AI, en reference a la technologie et a l'ecologie d'Eco-Thermique. Je suis ici pour repondre a vos questions sur Eco-thermique.", "Ether-AI, un nom qui symbolise la fusion de l'intelligence artificielle et de la responsabilite ecologique d'Eco-Thermique. Je suis ici pour repondre a vos questions sur Eco-thermique.", "Ether-AI, un nom qui incarne l'engagement d'Eco-Thermique en faveur des energies renouvelables. Je suis ici pour repondre a vos questions sur Eco-thermique.", "Mon nom est Ether-AI, en reference a la fusion de l'intelligence artificielle et de la responsabilite ecologique d'Eco-Thermique. Je suis ici pour repondre a vos questions sur Eco-thermique."
+            ]
+        },
+        {
+            "tag": "qui_nous_sommes",
+            "patterns": [
+                "Presentez Eco-thermique", "Definir Eco-thermique", "Qu'est-ce que Eco-Thermique?", "Qui est Eco-Thermique?", "Donnez-moi des informations sur Eco-Thermique.", "Donnez-moi des informations sur votre entreprise.", "Parlez-moi de Eco-Thermique.", "Comment cette entreprise a-t-elle ete creee?", "Qui a fonde Eco-Thermique?", "Qui est le PDG de Eco-Thermique?", "Qui est le directeur de Eco-Thermique?", "Quelle est l'histoire de Eco-Thermique?", "Comment Eco-Thermique a-t-elle ete creee?", "Qui a cree Eco-Thermique?"
+            ],
+            "responses": [
+                "Eco-Thermique est une entreprise fondee en 2017 par Mme TALBI RAJAE. Apres 8 ans d'experience dans le secteur de la biomasse en Italie, elle a decide d'entrer dans le secteur des energies renouvelables et de contribuer au developpement de son pays avec un modele economique axe sur le partage d'expertise en nouvelles technologies, comme solution d'energie thermique durable et ecologique.",
+                "L'histoire d'Eco-Thermique remonte a 2017 lorsque Mme TALBI RAJAE, avec 8 ans d'expertise dans le secteur de la biomasse en Italie, a fonde l'entreprise. Son objectif etait de contribuer au developpement durable en proposant des solutions innovantes en matiere d'energie thermique.",
+                "Eco-Thermique a ete fondee en 2017 par Mme TALBI RAJAE, une experte du secteur de la biomasse en Italie. Depuis sa creation, l'entreprise s'est specialisee dans les energies renouvelables et le partage d'expertise en energie thermique.",
+                "Depuis sa fondation en 2017 par Mme TALBI RAJAE, Eco-Thermique est devenue un acteur majeur des energies renouvelables, offrant des solutions innovantes en energie thermique durable et ecologique.",
+                "Depuis la creation d'Eco-Thermique en 2017 par Mme TALBI RAJAE, ses domaines d'expertise incluent les energies renouvelables, la biomasse, les technologies de chauffage durable et le partage d'expertise dans ces domaines."
+            ]
+        },
+        {
+            "tag": "presentation",
+            "patterns": [
+                "Quels sont leurs produits", "Produits", "Quels sont vos produits?", "Quels produits avez-vous?", "Quels sont les produits de Eco-Thermique?", "Quels types de produits propose Eco-Thermique?", "Quel est votre produit le plus vendu?", "Quels sont vos produits phares?", "Quels produits proposez-vous?", "Pouvez-vous presenter les produits de Eco-Thermique?", "Quels services sont offerts par Eco-Thermique?", "Pourriez-vous decrire les produits disponibles chez Eco-Thermique?", "Quelle est la gamme de produits proposes par Eco-Thermique?"
+            ],
+            "responses": [
+                "Nous proposons des chaudieres et des poeles a biomasse economiques, des produits high-tech fabriques en Italie, ainsi qu'une equipe qualifiee pour l'installation et la maintenance assurant le service apres-vente.",
+                "Chez Eco-Thermique, vous trouverez une gamme complete de produits, incluant des chaudieres et des poeles a biomasse economiques ainsi que des services d'installation et de maintenance.",
+                "Les produits offerts par Eco-Thermique comprennent des chaudieres et des poeles a biomasse economiques, des produits high-tech 100% italiens, et une equipe qualifiee pour l'installation et la maintenance.",
+                "La gamme de produits d'Eco-Thermique inclut des chaudieres et des poeles a biomasse economiques, des produits high-tech 100% italiens, et des services d'installation et de maintenance.",
+                "Chez Eco-Thermique, nous proposons une variete de produits, des chaudieres et des poeles a biomasse economiques aux produits high-tech 100% italiens, avec des services de qualite pour l'installation et la maintenance."
+            ]
+        },
+        {
+            "tag": "produits_services",
+            "patterns": [
+                "Quels produits sont commercialises par Eco-Thermique?", "Proposez-vous des services d'installation et de maintenance?", "Quels sont vos produits?"
+            ],
+            "responses": [
+                "Eco-Thermique commercialise des chaudieres italiennes et des poeles a biomasse economiques.",
+                "Eco-Thermique propose des chaudieres et des poeles a biomasse economiques, ainsi que d'autres solutions ecologiques.",
+                "Nous avons egalement des solutions de valorisation energetique de la biomasse.",
+                "Nos produits incluent des chaudieres italiennes de haute qualite et des poeles a biomasse.",
+                "Eco-Thermique offre une large gamme de produits pour repondre a vos besoins energetiques."
+            ]            
+        },
+        {
+            "tag": "objectifs",
+            "patterns": [
+                "quel est leur objectif", "votre objectif", "Vos objectifs", "objectif", "objectifs", "quel est votre objectif", "Quel est l'objectif de Eco-Thermique?", "Quels sont les objectifs de Eco-Thermique?", "Objectifs de Eco-Thermique", "Pourquoi Eco-Thermique a-t-elle ete creee?", "Quels sont les principaux objectifs de Eco-Thermique?", "En quoi consistent les objectifs de Eco-Thermique?", "Quels sont les valeurs fondamentales de Eco-Thermique?", "Comment Eco-Thermique contribue-t-elle a l'environnement?", "Quels avantages les clients peuvent-ils attendre de Eco-Thermique?", "Quels services ou produits differencient Eco-Thermique de ses concurrents?", "Quelle est la vision a long terme de Eco-Thermique?", "Comment Eco-Thermique garantit-elle la qualite de ses produits/services?"
+            ],
+            "responses": [
+                "Les objectifs d'Eco-Thermique incluent l'accompagnement des entreprises et des menages pour une transition efficace et rentable, repondre aux besoins en proposant des solutions d'energie thermique respectueuses de l'environnement, et valoriser energetiquement la biomasse.",
+                "Eco-Thermique contribue a la transition energetique en offrant des solutions innovantes en energie thermique, en promouvant les energies renouvelables, et en valorisant energetiquement la biomasse.",
+                "Les aspirations d'Eco-Thermique en termes de developpement durable sont de reduire l'empreinte carbone, de promouvoir les energies renouvelables, et de contribuer a un avenir energetique plus durable.",
+                "Eco-Thermique s'engage dans les energies renouvelables pour contribuer a un avenir energetique durable, reduire les emissions de carbone, et promouvoir des solutions respectueuses de l'environnement.",
+                "L'objectif global d'Eco-Thermique est d'offrir des solutions innovantes en energie thermique, de promouvoir les energies renouvelables, et de valoriser energetiquement la biomasse pour un avenir energetique plus durable."
+            ]
+            
+        },
+        {
+            "tag": "mission",
+            "patterns": [
+                "quelle est votre mission", "quelle est leur mission", "Quelle est la mission de Eco-Thermique?", "Quel role joue Eco-Thermique dans la conservation de l'environnement?", "Quels sont les engagements de Eco-Thermique envers l'environnement?", "quelle est votre mission", "Quel est le principal objectif de Eco-Thermique?", "Quels sont les valeurs fondamentales de Eco-Thermique?", "Quelle est l'importance de la mission de Eco-Thermique pour la societe?"
+            ],
+            "responses": [
+                "La mission d'Eco-Thermique inclut des etudes financieres et techniques liees au remplacement du systeme de chauffage actuel par un systeme de chauffage a biomasse, la commercialisation des sous-produits agricoles pour la production d'energie thermique, la realisation de bilans thermiques pour determiner l'energie necessaire au chauffage des bâtiments et a la production d'eau chaude, et l'installation d'un systeme de chauffage central adapte aux besoins.",
+                "Eco-Thermique contribue a la preservation de l'environnement en offrant des solutions d'energie thermique durables, en valorisant energetiquement la biomasse, et en reduisant l'empreinte carbone.",
+                "Le role d'Eco-Thermique dans la conservation de l'environnement est de promouvoir les energies renouvelables, de valoriser energetiquement la biomasse, et de reduire les emissions de carbone.",
+                "La mission d'Eco-Thermique en termes de developpement durable inclut la promotion des energies renouvelables, la reduction de l'empreinte carbone, et la contribution a un avenir energetique plus propre et durable.",
+                "Eco-Thermique s'engage a reduire l'empreinte carbone, a promouvoir les energies renouvelables, et a contribuer a un environnement plus propre grâce a ses solutions innovantes en energie thermique."
+            ]
+            
+        },
+        {
+            "tag": "secteurs_clients",
+            "patterns": [
+                "Quels secteurs sont desservis par Eco-Thermique?", "Quels sont les secteurs de Eco-Thermique?", "Quelles industries beneficient des produits de Eco-Thermique?", "Qui beneficie des solutions energetiques de Eco-Thermique?", "Quels sont les marches cibles de Eco-Thermique?", "Dans quels domaines Eco-Thermique est-elle specialisee?"
+            ],
+            "responses": [
+                "Eco-Thermique dessert une large gamme de secteurs, y compris l'industrie alimentaire, l'agriculture, la production d'energie, et bien d'autres.",
+                "Les produits d'Eco-Thermique beneficient a des industries telles que l'agriculture, l'industrie alimentaire, les serres, les bâtiments d'elevage, et d'autres secteurs necessitant des solutions energetiques durables.",
+                "Les solutions energetiques d'Eco-Thermique sont destinees aux entreprises de divers secteurs industriels, aux menages cherchant des solutions de chauffage efficaces, et aux acteurs engages dans la transition energetique.",
+                "Les marches cibles d'Eco-Thermique incluent l'industrie, l'agriculture, les institutions, les menages, et toute entreprise cherchant a adopter des solutions energetiques durables.",
+                "Eco-Thermique est specialisee dans la biomasse, les energies renouvelables, la production d'energie thermique, et la transition energetique."
+            ]
+            
+        },
+        {
+            "tag": "contact",
+            "patterns": [
+                "Comment puis-je vous contacter?", "Quelles sont vos coordonnees?", "comment vous contacter?", "J'ai besoin de contacter votre equipe."
+            ],
+            "responses": [
+                "Vous pouvez nous contacter au : <br>Telephone : +212661044371 <br>E-mail : ecothermique2017@gmail.com <br>Adresse : Magazin 10 Momounia 2 Ouislane Meknes-Maroc <br>Site web : eco-thermique.com <br>N'hesitez pas a nous appeler ou a nous envoyer un e-mail."
+            ]
+            
+        },
+        {
+            "tag": "Definition_biomasse",
+            "patterns": [
+                "Qu'est-ce que la biomasse?", "c'est quoi la biomasse", "qui ce que ca veut dire la biomasse"
+            ],
+            "responses": [
+                "La biomasse est de la matiere organique d'origine vegetale ou animale utilisee comme source d'energie renouvelable.",
+                "La biomasse peut etre brûlee pour produire de la chaleur et de l'electricite, ou convertie en biocarburants tels que le bioethanol et le biodiesel.",
+                "Nous utilisons les dechets agricoles, les residus forestiers, les cultures energetiques comme le miscanthus et la canne de Provence, ainsi que les dechets alimentaires et urbains.",
+                "La biomasse represente toutes les matieres organiques pouvant etre converties en energie. Elle constitue une importante reserve d'energie resultant de l'action du soleil via la photosynthese, et se presente principalement sous forme de carbone organique. Sa valorisation s'effectue a travers des procedes specifiques adaptes au type de composant."
+            ]
+            
+        },
+        {
+            "tag":"avantage_biomasse",
+            "patterns":[
+                "Pourquoi la biomasse?","quelle sont les avantages de biomasse", "quel est l'avantage de biomasse", "avantage de biomasse", "avantages", "Comment la biomasse est-elle utilisee pour produire de l'energie?", "Quels sont les avantages de la biomasse comme source d'energie?", "Qu'est-ce qui differencie la biomasse des autres sources d'energie?"
+            ],
+            "responses": [
+                "La valorisation energetique de la biomasse peut permettre d'augmenter la part des energies renouvelables dans un mix energetique et de reduire la dependance au petrole ou au gaz.",
+                "La biomasse est une energie peu coûteuse. Elle provient principalement des residus de culture, des dechets verts ou des biodechets, ainsi que des dechets de la filiere bois.",
+                "La biomasse est une source d'energie a faible emission de CO2, car elle rejette autant de CO2 qu'elle en absorbe des vegetaux pendant leur croissance. C'est donc une alliee majeure dans la lutte contre les gaz a effet de serre, souvent integree dans un mix energetique pour diminuer la dependance aux energies fossiles.",
+                "La biomasse est une energie renouvelable. Cette source d’energie utilise de la matiere vivante vegetale et animale.",
+                "Le principal avantage de l'energie biomasse, qui a peu d'inconvenients, est qu'elle est renouvelable. Une directive europeenne la definit comme « la partie biodegradable des produits, dechets et residus de l'agriculture, de la sylviculture et des industries connexes, ainsi que des dechets industriels et municipaux biodegradables ». L'energie biomasse est donc produite a partir de matieres biodegradables comme les dechets et les residus.",
+                "L’avantage de l’energie biomasse, loin d’etre un inconvenient pour les entreprises, est qu’elle utilise des ressources peu coûteuses et abondantes, d’origine vegetale ou animale. Les matieres organiques sont recuperees puis exploitees. Cela peut inclure :\n- Le bois extrait des forets,\n- Les dechets vegetaux produits par l’agriculture (feuilles, paille, tiges…),\n- Les dechets alimentaires generes par l’industrie ou les foyers,\n- Le fumier recolte dans les exploitations agricoles."
+            ]
+            
+        },
+        {
+            "tag": "cout_biomasse",
+            "patterns": [
+                "Quels sont les couts associes a l'utilisation de la biomasse?", "Comment les couts de la biomasse se comparent-ils a d'autres sources d'energie?", "Quel est l'impact financier de l'utilisation de la biomasse?", "Quel est le cout de l'utilisation de la biomasse?"
+            ],
+            "responses": [
+                "La biomasse peut etre competitive par rapport aux combustibles fossiles en fonction de son mode de production et d'utilisation. Par exemple, pour produire 10 kW d'energie, environ 1 litre de fioul est utilise, ce qui peut coûter 12 DH par litre. En comparaison, la biomasse necessite environ 2 kg pour generer la meme quantite d'energie, ce qui equivaut a un coût d'environ 4 DH. Ces coûts varient en fonction de la disponibilite des matieres premieres, des technologies de conversion utilisees, et des politiques en vigueur.",
+                "La competitivite de la biomasse en tant que source d'energie depend de plusieurs facteurs, y compris son coût de production par rapport aux combustibles fossiles. Par exemple, pour obtenir 10 kW d'energie, la biomasse necessite environ 2 kg de matiere, ce qui equivaut a un coût estime a environ 4 DH. En comparaison, l'utilisation de 1 litre de fioul pour generer la meme quantite d'energie peut coûter jusqu'a 12 DH. Ces differences de coût sont influencees par la disponibilite des matieres premieres, les technologies de conversion utilisees, et les politiques gouvernementales."
+            ]
+            
+        },
+        {
+            "tag":"type_chaudieres",
+            "patterns":[
+                "quels type de chaudieres?",
+                "quel type de votre chaudieres",
+                "Quels sont les differents types de chaudieres que l'on peut trouver?",
+                "Comment choisit-on la puissance d'une chaudiere pour une maison?",
+                "Quelle est la difference entre une chaudiere pour une maison et une chaudiere pour une grande industrie?",
+                "Peut-on ajuster la puissance d'une chaudiere en fonction de la taille de la piece a chauffer?",
+                "Pourquoi est-il important d'avoir une chaudiere avec la bonne puissance?",
+                "Quels sont les avantages d'avoir une chaudiere avec une puissance reglable?",
+                "Comment savoir si une chaudiere est adaptee a nos besoins en termes de puissance?",
+                "Les chaudieres a puissance variable sont-elles plus efficaces que celles a puissance fixe?",
+                "Quelles sont les consequences d'avoir une chaudiere avec une puissance inadaptee?",
+                "Comment peut-on economiser de l'energie en choisissant la bonne puissance pour sa chaudiere?",
+                "Quels types de chaudieres existe-t-il?",
+                "Comment choisir la puissance d'une chaudiere pour une maison?",
+                "Quelle difference entre une chaudiere pour maison et pour industrie?",
+                "Peut-on ajuster la puissance d'une chaudiere?",
+                "Pourquoi choisir la bonne puissance de chaudiere est-il important?",
+                "Quels sont les avantages d'une chaudiere reglable?"
+            ],
+            "responses":[
+                "On dispose de differents types de chaudieres adaptees a differentes utilisations. \nIl y a des chaudieres pour les maisons, d'autres pour l'industrie, et des modeles specifiques pour les grandes industries. \nChaque type d'utilisation necessite des chaudieres dotees d'une puissance specifique, allant de 30 kW a 5000 kW. \nPar exemple, les chaudieres pour les maisons ont une puissance comprise entre 30 kW et 100 kW, celles pour l'industrie entre 100 kW et 500 kW, et celles pour les grandes industries entre 500 kW et 5000 kW. \nLa puissance de la chaudiere peut etre ajustee en fonction de la surface du local que vous souhaitez chauffer.",
+                "Il existe differents types de chaudieres adaptes a diverses utilisations : les chaudieres domestiques, industrielles et pour les grandes industries. Chaque categorie utilise des chaudieres dotees de puissances specifiques, allant de 30 kW a 5000 kW. Les chaudieres domestiques ont une puissance comprise entre 30 kW et 100 kW, celles destinees a l'industrie entre 100 kW et 500 kW, et celles pour les grandes industries entre 500 kW et 5000 kW. La puissance requise depend de la surface du local a chauffer et peut etre ajustee en consequence.",
+                "Il existe divers types de chaudieres adaptees a differents usages : pour les habitations, les installations industrielles et les grandes industries. Chaque type de chaudiere est caracterise par une puissance specifique, variant de 30 kW a 5000 kW. Les chaudieres residentielles ont une puissance allant de 30 kW a 100 kW, celles destinees a l'industrie ont une plage de puissance de 100 kW a 500 kW, et celles pour les grandes industries vont de 500 kW a 5000 kW. La puissance necessaire depend de la superficie du local a chauffer, et elle peut etre ajustee en fonction de cette exigence.",
+                "Differents types de chaudieres sont disponibles pour repondre a divers besoins : residentiels, industriels et pour les grandes industries. Chaque type de chaudiere a une puissance specifique, allant de 30 kW a 5000 kW. Les chaudieres residentielles ont une puissance de 30 kW a 100 kW, celles pour l'industrie vont de 100 kW a 500 kW, et celles pour les grandes industries vont de 500 kW a 5000 kW. La puissance requise depend de la surface a chauffer et peut etre ajustee en consequence."
+            ]
+            
+        }
+    ]
+}

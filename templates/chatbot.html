@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ether-AI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #334d50, #cbcaa5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            margin: 0;
+            padding: 0;
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            z-index: -1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+        }
+        .eco-thermique {
+            position: absolute;
+            right: 10px;
+            margin: 15px;
+            top: 10px;
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px); /* Adds a blur effect to the background */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+            border-radius: 10px;
+        }
+        .my-name {
+            margin: 15px;
+            padding: 15px;
+            border-radius: 10px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            margin-right: 8px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            color: white;
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px); /* Adds a blur effect to the background */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+            cursor: pointer;
+        }
+        .my-name img {
+            margin-right: 8 px;
+            width: 130px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        #ether-logo {
+            width: 100px;
+            border-radius: 50%;
+            margin-right: 8px;
+        }
+
+        /*#version {
+            color: rgb(154, 154, 154);
+            padding: 10px;
+            border-left:2px solid rgb(154, 154, 154) ;
+            margin-left: 10px;
+        }*/
+        .chat-container {
+            width: 50%;
+            margin: auto;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #85929E;
+        }
+        .chat-box {
+            height: 60vh;
+            overflow-y: scroll;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: white;
+
+        }
+        .user-message {
+            text-align: right;
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+            font-size: 14px;
+            max-width: 80%;
+            float: right;
+            clear: both;
+            display: flex;
+            justify-content: flex-end;      
+        }
+        .bot-message {
+            text-align: left;
+            background-color: #FAE7F3;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+            font-size: 14px;
+            max-width: 70%;
+            float: left;
+            clear: both;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .message-content {
+            padding: 5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .message-content img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .input-box {
+            width: 88%;
+            outline: none;
+            padding: 10px;
+            margin-top: 10px;
+            box-sizing: border-box;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        .send-button {
+            /*width: 30%;*/
+            padding: 5px 15px;
+            margin-top: 10px;
+            float:right;
+            font-size: 14px;
+            background-color: #000;
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="my-name">
+        <img src="{{url_for('static', filename='ether1.jpeg')}}" id="ether-logo" alt="" srcset="">
+        ETHER-AI
+        <!--<span id='version'>1.0</span>-->
+    </div>
+    <a href="https://eco-thermique.com" target="_blank" class="eco-thermique">
+        <img src="{{ url_for('static', filename='logo-eco.png')}}" alt="Eco-thermique" srcset="">
+    </a>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box"></div>
+        <input type="text" id="user-input" class="input-box" placeholder="Type a message...">
+        <button class="send-button" onclick="sendMessage()"><img src="{{url_for('static', filename='send1.png')}}" alt="send" width="30"></button>
+    </div>
+    <footer>
+        <p>Ether-AI peut commettre des erreurs. Veuillez vérifier les informations importantes.</p>
+    </footer>
+
+    <script>
+        function sendMessage() {
+            let userInput = document.getElementById('user-input').value;
+            if (userInput.trim() === '') return;
+
+            let chatBox = document.getElementById('chat-box');
+            let userMessageDiv = document.createElement('div');
+            userMessageDiv.className = 'user-message';
+            userMessageDiv.textContent = userInput;
+            chatBox.appendChild(userMessageDiv);
+
+            fetch('/get_response', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                },
+                body: `user_input=${userInput}`
+            })
+            .then(response => response.json())
+            .then(data => {
+                
+                let botMessageDiv = document.createElement('div');
+                botMessageDiv.className = 'bot-message';
+                botMessageDiv.textContent = data.bot_response;
+                chatBox.appendChild(botMessageDiv);
+                chatBox.scrollTop = chatBox.scrollHeight;
+
+                let userMessageDiv = document.createElement('div');
+                userMessageDiv.className = 'user-message';
+            });
+
+            document.getElementById('user-input').value = '';
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+    </script>
+</body>
+</html>
+
